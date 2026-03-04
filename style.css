@@ -1,0 +1,245 @@
+/* ─── Reset ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Root & Body ────────────────────────────────────── */
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  padding: 1rem;
+}
+
+/* ─── Typography ─────────────────────────────────────── */
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.85);
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 0.95;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.85);
+  max-width: 60ch;
+}
+
+/* ─── Links ──────────────────────────────────────────── */
+a {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  opacity: 0.7;
+}
+
+/* ─── Nav ────────────────────────────────────────────── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4rem;
+  padding-bottom: 0;
+}
+
+.site-title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.nav-links a.active {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* ─── Archive / Index Page ───────────────────────────── */
+.archive {
+  max-width: 50%;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.post-list li a {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.post-list li a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.post-title {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* ─── Post Page ──────────────────────────────────────── */
+.post {
+  max-width: 50%;
+}
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-header .post-date {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.post-header h1 {
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
+
+/* ─── Post Content Blocks ────────────────────────────── */
+.post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Single image */
+.block-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Image with caption below */
+.block-image .caption {
+  margin-top: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1;
+}
+
+/* Two images side by side */
+.block-image-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.block-image-pair img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text block */
+.block-text p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.85);
+  max-width: 60ch;
+}
+
+.block-text p + p {
+  margin-top: 1em;
+}
+
+/* ─── Post Footer / Back Link ────────────────────────── */
+.post-back {
+  margin-top: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.post-back a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.post-back a:hover {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: underline;
+}
+
+/* ─── Mobile ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .archive,
+  .post {
+    max-width: 100%;
+  }
+
+  nav {
+    margin-bottom: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .block-image-pair {
+    grid-template-columns: 1fr;
+  }
+}
