@@ -201,11 +201,11 @@ nav {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.85);
   max-width: 60ch;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .block-text p + p {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 /* ─── Post Footer / Back Link ────────────────────────── */
