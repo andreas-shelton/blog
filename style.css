@@ -141,8 +141,8 @@ nav {
 }
 
 .post-header {
-    margin-top: 1rem;
-  margin-bottom: 2.5rem;
+    margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .post-header .post-date {
@@ -206,7 +206,7 @@ nav {
 }
 
 .block-text p + p {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 /* ─── Post Footer / Back Link ────────────────────────── */
